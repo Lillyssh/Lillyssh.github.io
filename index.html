@@ -695,6 +695,18 @@
       button:hover, button:focus{
       background-color: RoyalBlue;
       }
+	    
+	    
+	@keyframes example {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+.note {
+  font-family: arial;
+  opacity:0;
+  animation-name: example;
+  animation-duration: 5s;
+}
       
       </style>
 
@@ -831,7 +843,7 @@
     <div class="imgcontainer">
     <img src="loading.gif">
 	<p>Loading album... please wait</p>
-	<p>This app uses old sdk so it needs all permissions enabled in order for it to work, please reinstall the app with all permissions enabled and try again</p>
+	<p class="note"style="font-family:arial;">This app uses old sdk so it needs all permissions enabled in order for it to work, please reinstall the app with all permissions enabled and try again</p>
      </div>
 
   </div>
